@@ -4,7 +4,7 @@
  * https://diplom.org/Zine/S2009M/Kruijswijk/DipMath_Chp6.htm
  * 
  */
-function resolve_orders(orders, adjudicater) {
+function resolve_orders(orders, adjudicator) {
     /* Possible resolutions of an order. */
     const FAILS = 0;
     const SUCCEEDS = 1;
@@ -141,7 +141,7 @@ function resolve_orders(orders, adjudicater) {
     }
 
     function adjudicate(nr) {
-        return adjudicater(orders, nr, resolve);
+        return adjudicator(orders, nr, resolve);
     }
 
     function backup_rule(nr) {
